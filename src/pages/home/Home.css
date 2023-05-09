@@ -1,0 +1,26 @@
+.favourites {
+  display: flex;
+}
+
+.playlists {
+  display: flex;
+}
+
+.recently_added {
+  display: flex;
+}
+
+.recently_played {
+  display: flex;
+}
+
+h2 {
+  margin: 0 0 0 8px;
+}
+.track_card {
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+  background: #DBE0E9;
+  margin: 8px;
+}
