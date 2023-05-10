@@ -3,13 +3,20 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root{
+  --PRIMARY_BACKGROUND: #141414;
+  --PRIMARY_FOREGROUND:#72767f;
+  --ACTIVE_TEXT:#E5E8EE;
+}
 
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background: var(--PRIMARY_BACKGROUND);
 }
+
 
 #root {
   height: 100%;
@@ -19,3 +26,5 @@ body {
   position: relative;
   height: 100%;
 }
+
+

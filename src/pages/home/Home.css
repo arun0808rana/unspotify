@@ -1,26 +1,106 @@
-.favourites {
+.home {
+  padding: 16px;
+}
+
+.favourites__card_container {
   display: flex;
 }
 
-.playlists {
+.playlists__card_container {
   display: flex;
 }
 
-.recently_added {
+.recently_added__card_container {
   display: flex;
 }
 
-.recently_played {
+.recently_played__card_container {
   display: flex;
 }
 
-h2 {
-  margin: 0 0 0 8px;
+.home_headings {
+  margin-left: 16px;
+  color: var(--ACTIVE_TEXT);
 }
+
 .track_card {
   border-radius: 4px;
-  width: 200px;
-  height: 200px;
-  background: #DBE0E9;
-  margin: 8px;
+  width: 100%;
+  max-width: 240px;
+  background: #fff;
+  margin: 8px 16px;
+}
+
+.track_card_details {
+  padding: 8px;
+}
+
+.track_card__cover_art {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.track_card__artist_name {
+  font-size: 12px;
+}
+
+.track_card__track_name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mobile_track_card {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .favourites__card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playlists__card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recently_added__card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recently_played__card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop_track_card {
+    display: none;
+  }
+
+  .mobile_track_card {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .track_card {
+    width: 100%;
+    max-width: 576px;
+    height: 96px;
+  }
+
+  .mobile_track_card__track_card__cover_art {
+    height: 80px;
+    width: auto;
+  }
+  .mobile_track_card__track_card_details{
+    margin-left: 16px;
+  }
 }
